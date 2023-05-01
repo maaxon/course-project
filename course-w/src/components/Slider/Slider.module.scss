@@ -1,0 +1,19 @@
+.slider{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  img{
+    width: 30%;
+    margin: 0;
+  }
+}
+
+
+
+img{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
