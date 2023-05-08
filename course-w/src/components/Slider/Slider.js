@@ -1,13 +1,8 @@
 import React, {useState,useRef,useEffect} from "react";
 import {AngleLeft} from "@styled-icons/fa-solid/AngleLeft";
 import {AngleRight} from "@styled-icons/fa-solid/AngleRight";
-import classes from "./Slider.module.scss";
 
 export default function Slider({children,slides_count,wrapClass,arrowClass,arrowRightClass = "",arrowLeftClass = ""}){
-
-    useEffect(()=>{
-        setSlides(slides_arr.slice(0,slides_count))
-    },[slides_count])
 
     const slider = useRef(null);
 
@@ -15,6 +10,10 @@ export default function Slider({children,slides_count,wrapClass,arrowClass,arrow
     const slides_arr = children.map((slide,index) =>{
         return <slide.type {...slide.props} slideNum={index} />
     })
+
+    useEffect(()=>{
+        setSlides(slides_arr.slice(0,slides_count))
+    },[slides_count])
 
     //return array of active slides and function to set active slides
     const [slides,setSlides] = useState(slides_arr.slice(0,slides_count))

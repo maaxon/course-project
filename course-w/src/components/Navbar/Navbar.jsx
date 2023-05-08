@@ -6,7 +6,7 @@ import HamMenu from "../HamMenu/HamMenu";
 import {useEffect, useState} from "react";
 import app from "../../store/App";
 import {observer} from "mobx-react-lite";
-
+import {ReactComponent as Logo} from '../../misc/BrandLogo.svg';
 
 function Navbar(){
 
@@ -57,7 +57,7 @@ const NavMobile = () =>{
                 .menu{
                 display: ${hamburgerOpen ? 'flex' : 'none'};
                 background-color: #EFF0F0;
-                height: 50vh;
+                height: 25vh;
                 width: 100vw;
                 margin-top: 50px;
                 position: fixed;
