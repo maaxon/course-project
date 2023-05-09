@@ -16,29 +16,33 @@ import app from "../../store/App";
 import {observer} from "mobx-react-lite";
 
 
-const Main = () =>{
+const Main = () => {
 
-    useEffect(()=>{
+    useEffect(() => {
         cars.fetchCars()
-    },[])
+    }, [])
 
 
     return (
         <main className={classes.main}>
             <img src={banner} className={classes.banner} alt="banner"/>
             <BrandPick/>
-           <h1>Автомобили в наличии</h1>
+            <h1>Автомобили в наличии</h1>
             <section className={classes.cars}>
-                {cars.cars.slice(0,3).map((car)=><Card key={car.id} img={car.img} price={car.price} desc={car.description} brand={car.brand} id={car.id} model={car.model} />)}
+                {cars.cars.slice(0, 3).map((car) => <Card key={car.id} img={car.img} price={car.price}
+                                                          desc={car.description} brand={car.brand} id={car.id}
+                                                          model={car.model}/>)}
             </section>
             <section className={classes.marketing}>
                 <h1>Спецпредложения</h1>
-                <Slider arrowRightClass={classes.arrowRight} wrapClass={classes.sliderWrap} arrowLeftClass={classes.arrowLeft} arrowClass={classes.arrow} slides_count={app.getSlidesCount()}>
-                    <img src={slide} key={"sl-1"} type={'slide'}/>
-                    <img src={slide2} key={"sl-2"} type={'slide'}/>
-                    <img src={slide3} key={"sl-3"} type={'slide'}/>
-                    <img src={slide} key={"sl-4"} type={'slide'}/>
-                    <img src={slide2} key={"sl-5"} type={'slide'}/>
+                <Slider arrowRightClass={classes.arrowRight} wrapClass={classes.sliderWrap}
+                        arrowLeftClass={classes.arrowLeft} arrowClass={classes.arrow}
+                        slides_count={app.getSlidesCount()}>
+                    <img src={slide}  key={"sl-1"} type={'slide'} alt='slide'/>
+                    <img src={slide2} key={"sl-2"} type={'slide'} alt='slide'/>
+                    <img src={slide3} key={"sl-3"} type={'slide'} alt='slide'/>
+                    <img src={slide}  key={"sl-4"} type={'slide'} alt='slide'/>
+                    <img src={slide2} key={"sl-5"} type={'slide'} alt='slide'/>
                 </Slider>
                 <h1>Банки-партнеры</h1>
                 <section className={classes.banks}>
@@ -49,7 +53,9 @@ const Main = () =>{
             </section>
             <section className={classes.about}>
                 <h1>О компании</h1>
-                <p>Мы располагаем огромной торговой площадкой более 5000 квадратных метров, у нас в наличии не менее 200 автомобилей как отечественного, так и иностранного производства. В штате автосалона «Альтера» работают настоящие профессионалы, которые знают особенности каждого конкретного автомобиля</p>
+                <p>Мы располагаем огромной торговой площадкой более 5000 квадратных метров, у нас в наличии не менее 200
+                    автомобилей как отечественного, так и иностранного производства. В штате автосалона «Альтера»
+                    работают настоящие профессионалы, которые знают особенности каждого конкретного автомобиля</p>
                 <img src={about} alt="about"/>
             </section>
         </main>

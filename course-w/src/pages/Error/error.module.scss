@@ -1,16 +1,20 @@
-.main{
+@import "/src/extention";
+
+.main {
   text-align: center;
   height: 69.3vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  h1{
+
+  h1 {
     font-size: 3rem;
     width: 100%;
 
   }
-  a{
-    color: #CA0100;
+
+  a {
+    color: $mainRed;
     font-size: 1.5rem;
     font-weight: bold;
   }

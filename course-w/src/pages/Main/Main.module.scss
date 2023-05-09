@@ -1,26 +1,32 @@
+@import "/src/extention";
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .banner{
+
+  .banner {
     margin: 0 2%;
     width: 96%;
   }
-  .cars{
+
+  .cars {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 70vw;
   }
-  .marketing{
+
+  .marketing {
     width: 70vw;
 
   }
-  .about{
+
+  .about {
     width: 50vw;
     text-align: center;
-    img{
+
+    img {
       width: 100%;
     }
   }
@@ -28,92 +34,95 @@
 }
 
 
-.arrow{
+.arrow {
   z-index: 100;
   width: 2vw;
   height: 4vh;
-  position:relative;
+  position: relative;
   background: #FFF;
   top: -4vh;
   border-radius: 6px;
 
-  &:hover{
-    background: #CA0100;
-    svg{
+  &:hover {
+    background: $mainRed;
+
+    svg {
       color: #eeeeee;
     }
   }
 
-  svg{
-    width:2vw;
-    height:2vh;
-    position:relative;
+  svg {
+    width: 2vw;
+    height: 2vh;
+    position: relative;
     color: black;
   }
 }
-.arrowLeft{
+
+.arrowLeft {
   left: 90%;
 }
 
-.arrowRight{
+.arrowRight {
   left: -4%;
 }
 
-.sliderWrap{
+.sliderWrap {
   display: flex;
   margin-top: 5vh;
   justify-content: space-between;
-  img{
+
+  img {
     width: 30%;
     height: 40%;
     animation: 500ms ease-in fadeIn;
   }
+
   margin-bottom: 7vh;
 }
 
-.banks{
+.banks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-    img{
-      width: 250px;
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
+
+  img {
+    width: 250px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-  .main{
-    .cars{
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main {
+    .cars {
       width: 95vh;
     }
 
 
   }
 
-  .sliderWrap{
-    img{
+  .sliderWrap {
+    img {
       width: 50%;
       height: 40%;
     }
   }
 
-  .arrowLeft{
+  .arrowLeft {
     left: 93%;
   }
 
-  .arrow{
+  .arrow {
     width: 3vw;
 
-    svg{
-      width:3vw;
+    svg {
+      width: 3vw;
     }
   }
 
-  .banks{
+  .banks {
     width: 78vw;
     justify-content: space-evenly;
   }
@@ -121,49 +130,39 @@ and (max-device-width : 1024px) {
 
 }
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-  .main{
-    .about{
+  .main {
+    .about {
       width: 90vw;
     }
 
-    .cars{
+    .cars {
       width: 85vw;
     }
   }
 
-  .sliderWrap{
-    img{
+  .sliderWrap {
+    img {
       width: 85%;
     }
 
   }
-  .arrowLeft{
-      left: 78%;
-    }
-    .arrow{
+  .arrowLeft {
+    left: 78%;
+  }
+  .arrow {
+    width: 6vw;
+
+    svg {
       width: 6vw;
-
-      svg{
-        width:6vw;
-      }
     }
-    .banks{
-      img{
-        margin-right: 0;
-      }
-    }
-}
-
-
-@keyframes fadeIn {
-  from{
-    opacity: 0;
   }
-  to{
-    opacity: 1;
+  .banks {
+    img {
+      margin-right: 0;
+    }
   }
 }
+
+

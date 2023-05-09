@@ -1,13 +1,13 @@
 <cars>
-
     <car>
         <id>12211</id>
         <brand>BMW</brand>
         <model>M5</model>
         <price>78000</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11376042/vehicle_slider_1%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11376042/vehicle_slider_1%402x.jpg
+        </img>
         <description>4.4 AT (600 л.с.) 4WD, 44581 км, Бензин, Полный привод, Fresh Минеральные Воды</description>
-
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11376042/vehicle_slider_1%402x.jpg
         </galery>
@@ -20,7 +20,6 @@
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11376045/vehicle_slider_4%402x.jpg
         </galery>
-
         <spec>
             <title>Тип КПП</title>
             <desc>Механическая</desc>
@@ -36,9 +35,10 @@
         <brand>Audi</brand>
         <model>RS 6</model>
         <price>75000</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/12805544/vehicle_slider_1.ynrMfLa4ZpP6y-Se1B-QT_neZJVy3eSF-tBkkXzVbpl6%402x.-5k55BkGIouQ2dIY7dEAQOjP7lE04ltBpPOpU11qBmw</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/12805544/vehicle_slider_1.ynrMfLa4ZpP6y-Se1B-QT_neZJVy3eSF-tBkkXzVbpl6%402x.-5k55BkGIouQ2dIY7dEAQOjP7lE04ltBpPOpU11qBmw
+        </img>
         <description>4.0 AT (600 л.с.) 4WD, 22951 км, Бензин, Полный привод, Ауди Центр Выборгский</description>
-
         <spec>
             <title>Тип КПП</title>
             <desc>Механическая</desc>
@@ -65,7 +65,9 @@
         <brand>Audi</brand>
         <model>S4</model>
         <price>45000</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13604724/vehicle_slider_1.ub9c3ra4FVZqaZdbIuD5hmN8F1Dif5dAanIXVOx3HVzq%402x.XxykH5MaWPQIRMLsIYl_7zk74XCo49Ryj5stcLc7YdY</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13604724/vehicle_slider_1.ub9c3ra4FVZqaZdbIuD5hmN8F1Dif5dAanIXVOx3HVzq%402x.XxykH5MaWPQIRMLsIYl_7zk74XCo49Ryj5stcLc7YdY
+        </img>
         <description>3.0 AMT (333 л.с.) 4WD, 170867 км, Бензин, Полный привод, СИМ Введенского</description>
         <spec>
             <title>Тип КПП</title>
@@ -93,7 +95,9 @@
         <brand>Audi</brand>
         <model>S8</model>
         <price>45000</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11729733/vehicle_slider_1.2A8HK7axdOYxnPbrO3COB9-IdOK7gn7k%402x.3K3-l6ZIn0wynkRa3e9JPIR3Dm9GuAcW-4xZWLjO9uQ</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11729733/vehicle_slider_1.2A8HK7axdOYxnPbrO3COB9-IdOK7gn7k%402x.3K3-l6ZIn0wynkRa3e9JPIR3Dm9GuAcW-4xZWLjO9uQ
+        </img>
         <description>2.8 AT (220 л.с.) 4WD, 147178 км, Бензин, Полный привод, Fresh Минеральные Воды</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11729733/vehicle_slider_1.2A8HK7axdOYxnPbrO3COB9-IdOK7gn7k%402x.3K3-l6ZIn0wynkRa3e9JPIR3Dm9GuAcW-4xZWLjO9uQ
@@ -123,7 +127,9 @@
         <brand>Toyota</brand>
         <model>Rav 4</model>
         <price>25000</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13787954/vehicle_slider_1%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13787954/vehicle_slider_1%402x.jpg
+        </img>
         <description>2.5 AT (180 л.с.) 4WD, 114436 км, Бензин, Полный привод, Fresh Тюмень</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13787954/vehicle_slider_1%402x.jpg
@@ -151,7 +157,9 @@
         <brand>Toyota</brand>
         <model>Supra</model>
         <price>49700</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11111968/vehicle_slider_1%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11111968/vehicle_slider_1%402x.jpg
+        </img>
         <description>3.0 AT (340 л.с.), 146 км, Бензин, Задний привод, Fresh Ростов Аксай</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/11111968/vehicle_slider_1%402x.jpg
@@ -179,7 +187,9 @@
         <brand>Toyota</brand>
         <model>Camry</model>
         <price>32750</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13653571/vehicle_slider_1%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13653571/vehicle_slider_1%402x.jpg
+        </img>
         <description>3.5 AT (249 л.с.), 22967 км, Бензин, Передний привод, Fresh Ростов Аксай</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13653571/vehicle_slider_1%402x.jpg
@@ -203,14 +213,14 @@
         </spec>
     </car>
 
-
-
     <car>
         <id>vwtig</id>
         <brand>Volkswagen</brand>
         <model>Tiguan</model>
         <price>42657</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13788598/vehicle_slider_untitled__1_of_15_%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13788598/vehicle_slider_untitled__1_of_15_%402x.jpg
+        </img>
         <description>L 2.0 AMT (186 л.с.), 461 км, Бензин, Передний привод, Fresh Краснодар</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13788598/vehicle_slider_untitled__1_of_15_%402x.jpg
@@ -239,7 +249,9 @@
         <brand>Mazda</brand>
         <model>rx8</model>
         <price>25700</price>
-        <img>https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13303294/vehicle_slider_1%402x.jpg</img>
+        <img>
+            https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13303294/vehicle_slider_1%402x.jpg
+        </img>
         <description>1.3 MT (231 л.с.), 86118 км, Бензин, Задний привод, Fresh Воронеж Юг</description>
         <galery>
             https://134706.selcdn.ru/v1/SEL_39171/freshauto-crm-production-public/system/image/file/13303294/vehicle_slider_1%402x.jpg
@@ -262,5 +274,5 @@
             <desc>купе</desc>
         </spec>
     </car>
-
 </cars>
+

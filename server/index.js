@@ -1,4 +1,4 @@
-import express, {json} from 'express'
+import express from 'express'
 import fs from "fs"
 import parser from "xml2json"
 import cors from "cors"
@@ -17,27 +17,27 @@ const options = {
 };
 
 const app = express()
- app.use(cors());
+app.use(cors());
 
 
-app.get("/",(req,res)=>{
-    fs.readFile( './brands.xml', function(err, data) {
-        const json = parser.toJson(data,options);
+app.get("/", (req, res) => {
+    fs.readFile('./brands.xml', function (err, data) {
+        const json = parser.toJson(data, options);
         console.log("to json ->", json);
         res.send(json)
     });
 
 })
 
-app.get("/cars",(req,res)=>{
-    fs.readFile( './cars.xml', function(err, data) {
-        const json = parser.toJson(data,options);
+app.get("/cars", (req, res) => {
+    fs.readFile('./cars.xml', function (err, data) {
+        const json = parser.toJson(data, options);
         console.log("to json ->", json);
         res.send(json)
     });
 
 })
 
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log("server listening")
 })

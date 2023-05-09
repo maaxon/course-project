@@ -1,4 +1,6 @@
-.wrapper{
+@import "/src/extention";
+
+.wrapper {
   width: 60vw;
   height: 40vh;
   border-radius: 11px;
@@ -8,7 +10,7 @@
 
   padding-top: 4vh;
 
-  .brands{
+  .brands {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -17,71 +19,76 @@
     margin-left: 7%;
     opacity: 1;
 
+    .active {
+      color: $priceGrey;
+      text-decoration: underline;
+    }
   }
 
-  .input{
+  .input {
     width: 35%;
     opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80%;
-    .selects{
-        display: flex;
-        justify-content: space-between;
-        width: 85%;
-        height: 17%;
-        select{
-          width: 48%;
-          padding: 0 20px;
-          border-radius:6px;
-          border: 1px solid #E1E1E1;
-          &:focus{
-            border: none;
-          }
 
-          &:hover{
-            border: none;
-          }
+    .selects {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      height: 17%;
+
+      select {
+        width: 48%;
+        padding: 0 20px;
+        border-radius: 6px;
+        border: 1px solid #E1E1E1;
+
+        &:focus {
+          border: none;
         }
+
+        &:hover {
+          border: none;
+        }
+      }
     }
-    button{
+
+    button {
       width: 85%;
       border: none;
-      background: #CA0100;
+      background: $mainRed;
       color: white;
       height: 20%;
-      border-radius: 6px ;
+      border-radius: 6px;
     }
   }
 
 
 }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px){
-  .wrapper{
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .wrapper {
     width: 95vw;
   }
 
-  .selects{
-    select{
+  .selects {
+    select {
       font-size: 11px;
     }
   }
 }
 
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  .wrapper{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wrapper {
     height: 85vh;
     display: block;
     width: 80vw;
 
-    .brands{
+    .brands {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -90,7 +97,8 @@ and (max-device-width : 480px) {
       margin-right: 5%;
       margin-left: 0;
       opacity: 1;
-      p{
+
+      p {
         width: 32%;
         text-align: center;
       }
@@ -101,24 +109,26 @@ and (max-device-width : 480px) {
       align-items: center;
       height: 50%;
 
-      .range{
+      .range {
         width: 90%;
         margin-left: 2.7rem;
       }
-      .selects{
+
+      .selects {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         width: 97%;
         height: 18vh;
         margin-top: 3vh;
-        select{
+
+        select {
           width: 90%;
           height: 7vh;
         }
       }
 
-      button{
+      button {
         height: 16%;
       }
     }

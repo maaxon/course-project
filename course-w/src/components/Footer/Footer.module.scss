@@ -1,11 +1,11 @@
-.footer{
+.footer {
   width: 98%;
   background: black;
   margin-top: 7vh;
   display: flex;
   justify-content: space-evenly;
 
-  section{
+  section {
 
     display: flex;
 
@@ -13,20 +13,20 @@
 
     flex-wrap: wrap;
 
-    h5{
+    h5 {
       color: white;
       font-size: 0.7rem;
       width: 100%;
       margin-bottom: 0;
     }
 
-    div{
+    div {
       display: flex;
       justify-content: space-between;
       width: 100%;
       padding-bottom: 4%;
 
-      p{
+      p {
         padding-top: 0;
       }
     }
@@ -34,7 +34,7 @@
 
   }
 
-  p{
+  p {
     color: #737373;
     font-size: 0.5rem;
     width: 20vw;
@@ -42,44 +42,44 @@
   }
 }
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px){
-  .footer{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer {
     justify-content: center;
-    section{
+
+    section {
       width: 82vw;
-      div{
-        p{
+
+      div {
+        p {
           display: inline;
         }
       }
     }
 
 
-    p{
+    p {
       display: none;
     }
   }
 }
 
 
-@media only screen
-and (min-device-width : 758px)
-and (max-device-width : 1024px){
-  .footer{
+@media only screen and (min-device-width: 758px) and (max-device-width: 1024px) {
+  .footer {
     justify-content: center;
-    section{
+
+    section {
       width: 40vw;
-      div{
-        p{
+
+      div {
+        p {
           display: inline;
         }
       }
     }
 
 
-    p{
+    p {
       display: none;
     }
   }

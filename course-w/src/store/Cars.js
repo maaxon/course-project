@@ -1,71 +1,71 @@
 import {makeAutoObservable} from "mobx";
 
 
-class Cars{
+class Cars {
     cars = []
     price = {
-        min:5,
-        max:100
+        min: 5,
+        max: 100
     }
     brand = ''
-    gearboxType='';
-    bodyType='';
+    gearboxType = '';
+    bodyType = '';
     filteredCars = [];
+
     constructor() {
         makeAutoObservable(this)
     }
 
 
-
-    async fetchCars(){
+    async fetchCars() {
         let data = await fetch('http://localhost:5000/cars')
         const json = await data.json()
         this.cars = json.cars.car
     }
 
-    async checkFetched(){
+    async checkFetched() {
         if (this.cars.length < 1) await this.fetchCars()
     }
 
-    setBrand(brand){
+    setBrand(brand) {
         this.brand = brand
     }
 
-    getCars(){
-        let cars = this.cars.filter(car => car.price/1000 >= this.price.min && car.price/1000 <= this.price.max);
-        if(this.brand) cars = cars.filter(car => car.brand === this.brand)
-        if(this.gearboxType) cars = cars.filter(car => car.spec.find(spec => spec.title === "Тип КПП").desc === this.gearboxType)
-        if(this.bodyType) cars  = cars.filter(car => car.spec.find(spec => spec.title === "Тип кузова").desc === this.bodyType)
+    getCars() {
+        let cars = this.cars.filter(car => car.price / 1000 >= this.price.min && car.price / 1000 <= this.price.max);
+        if (this.brand) cars = cars.filter(car => car.brand === this.brand)
+        if (this.gearboxType) cars = cars.filter(car => car.spec.find(spec => spec.title === "Тип КПП").desc === this.gearboxType)
+        if (this.bodyType) cars = cars.filter(car => car.spec.find(spec => spec.title === "Тип кузова").desc === this.bodyType)
         return cars
     }
 
 
-
-    getCar(id){
+    getCar(id) {
         console.log(id)
 
         const res = this.cars.find(car => {
             console.log(car.id)
-            return car.id === id})
+            return car.id === id
+        })
         console.log(res)
         return res
     }
 
-    setPrice(value){
+    setPrice(value) {
         this.price = value
     }
 
-    setGearboxType(type){
+    setGearboxType(type) {
         this.gearboxType = type
     }
 
-    setBodyType(type){
+    setBodyType(type) {
         this.bodyType = type
     }
 
-    getPrice(){
+    getPrice() {
         return this.price
     }
 }
-
+// eslint-disable-next-line
 export default new Cars()

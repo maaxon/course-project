@@ -1,41 +1,41 @@
-.wrap{
+@import "/src/extention";
+
+.wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:left ;
+  text-align: left;
 
-  .cars{
+  .cars {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 70vw;
     margin-top: 10vh;
   }
 
-  .outStock{
+  .outStock {
     margin: 10vh 0;
   }
 
-  button{
+  button {
     width: 10vw;
     border: none;
-    background: #CA0100;
+    background: $mainRed;
     color: white;
     height: 5vh;
-    border-radius: 6px ;
+    border-radius: 6px;
   }
 }
 
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px){
-  .wrap{
-    .cars{
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .wrap {
+    .cars {
       width: 85vw;
     }
 
-    button{
+    button {
       width: 20vw;
       height: 5vh;
     }
@@ -43,16 +43,14 @@ and (max-device-width : 1024px){
 }
 
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px){
-  .wrap{
-    .cars{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wrap {
+    .cars {
       width: 85vw;
       justify-content: center;
     }
 
-    button{
+    button {
       width: 40vw;
       height: 5vh;
     }

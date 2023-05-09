@@ -13,36 +13,36 @@ import Error from "./pages/Error/Error";
 
 function App() {
 
-    useEffect(()=>{
+    useEffect(() => {
         cars.fetchCars();
         app.setMode()
-    },[])
+    }, [])
 
-    const [ pathname ] = useLocation();
+    const [pathname] = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
 
-    window.onresize=()=>{
+    window.onresize = () => {
         app.setMode()
     }
 
 
-  return (
-      <>
-          <Navbar/>
-          <Route path="/"><Main /></Route>
-          <Route path="/cars/:brand">{({brand}) => <Cars brand={brand}/>}</Route>
-          <Route path="/cars/"><Cars brand={""}/></Route>
-          <Route path="/car/:id">{({id}) => <Car id={id}/>}</Route>
-          <Route path="/about"><AboutUS/></Route>
-          <Route path="/error/"><Error/></Route>
-          <Footer/>
-      </>
+    return (
+        <>
+            <Navbar/>
+            <Route path="/"><Main/></Route>
+            <Route path="/cars/:brand">{({brand}) => <Cars brand={brand}/>}</Route>
+            <Route path="/cars/"><Cars brand={""}/></Route>
+            <Route path="/car/:id">{({id}) => <Car id={id}/>}</Route>
+            <Route path="/about"><AboutUS/></Route>
+            <Route path="/error/"><Error/></Route>
+            <Footer/>
+        </>
 
-  );
+    );
 }
 
 export default App;

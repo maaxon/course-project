@@ -6,35 +6,35 @@ import HamMenu from "../HamMenu/HamMenu";
 import {useEffect, useState} from "react";
 import app from "../../store/App";
 import {observer} from "mobx-react-lite";
-import {ReactComponent as Logo} from '../../misc/BrandLogo.svg';
+import Logo from '../../misc/logo.svg';
 
-function Navbar(){
+function Navbar() {
 
 
     if (app.mode === 'mobile') return <NavMobile/>
 
-       return( <nav className={classes.nav}>
-            <Link to={'/'}><img src={logo} className={classes.logo} alt="logo"/></Link>
-            <Link to={'/cars/'}>Каталог Авто</Link>
-            <Link to={'/error/'}>Aвто с пробегом</Link>
-            <Link to={'/about'}>О нас</Link>
-            <img className={classes.phone} src={phone} alt="logo"/>
-        </nav>)
+    return (<nav className={classes.nav}>
+        <Link to={'/'}><img src={Logo} className={classes.logo} alt="logo"/></Link>
+        <Link to={'/cars/'}>Каталог Авто</Link>
+        <Link to={'/error/'}>Aвто с пробегом</Link>
+        <Link to={'/about'}>О нас</Link>
+        <img className={classes.phone} src={phone} alt="logo"/>
+    </nav>)
 
 }
 
 export default observer(Navbar)
 
-const NavMobile = () =>{
+const NavMobile = () => {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-    const toggleHamburger = () =>{
+    const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen)
     }
 
-    const handleScroll = () =>{
-            setHamburgerOpen(false)
+    const handleScroll = () => {
+        setHamburgerOpen(false)
     }
 
     useEffect(() => {
@@ -43,7 +43,7 @@ const NavMobile = () =>{
     }, []);
 
 
-    return(
+    return (
         <nav className={classes.nav}>
             <Link to={'/'}><img src={logo} className={classes.logo} alt="logo"/></Link>
             <div onClick={toggleHamburger}><HamMenu isOpen={hamburgerOpen}></HamMenu></div>
